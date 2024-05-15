@@ -1,0 +1,117 @@
+
+.mintmrm .mrm-input-group .input-wrapper.checkbox-input-wrapper {
+  display:flex;
+  align-items: center;
+  gap: 6px
+}
+
+label.mrm-privacy-policy-input-label {
+  position: relative;
+  margin-bottom: 0px;
+  width: calc(100% - 30px);
+}
+
+.mintmrm .mrm-input-group .input-wrapper.checkbox-input-wrapper.custom-checkbox input[type=checkbox] {
+	position: relative;
+	left: 0;
+	top: 2px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 4px;
+	border: 1px solid #b9b9b9;
+	transition: all 0.3s ease;
+	box-sizing: border-box;
+	margin-right: 5px;
+}
+
+.mintmrm .mrm-input-group .input-wrapper.checkbox-input-wrapper.custom-checkbox input[type=checkbox]:checked {
+  background-color: #573bff;
+  border-color: #573bff;
+}
+
+
+
+.mintmrm .mrm-input-group .input-wrapper.checkbox-input-wrapper.custom-checkbox input[type=checkbox]::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  width: 9px;
+  height: 5px;
+  transform: rotate(-45deg);
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  opacity: 0;
+  visibility: hidden;
+  box-sizing: border-box;
+}
+
+.mintmrm .mrm-input-group .input-wrapper.checkbox-input-wrapper.custom-checkbox input[type=checkbox]:checked::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mintmrm .mrm-input-group .input-wrapper.checkbox-input-wrapper.custom-checkbox input[type=checkbox]:focus {
+  outline: none;
+}
+
+.mintmrm .mrm-input-group .input-wrapper.checkbox-input-wrapper.custom-checkbox input[type=checkbox]::after {
+  display: none;
+}
+
+.mintmrm .mrm-input-group .input-wrapper.checkbox-input-wrapper.theme-checkbox input[type=checkbox] {
+  display: block;
+  margin: 0;
+}
+
+label.mrm-privacy-policy-input-label {
+  position: relative;
+}
+
+label.mrm-privacy-policy-input-label .mrm-privacy-policy{
+  margin: 0;
+  line-height: 1.5;
+  display: inline;
+}
+
+label.mrm-privacy-policy-input-label .mailmint-checkbox {
+  position: relative;
+  left: 0;
+  top: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #b9b9b9;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+span.mailmint-checkbox:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 9px;
+  height: 5px;
+  transform: rotate(-45deg);
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  box-sizing: border-box;
+}
+
+.input-wrapper.checkbox-input-wrapper input[type=checkbox]:checked + label.mrm-privacy-policy-input-label .mailmint-checkbox  {
+  background-color: #573bff;
+  border-color: #573bff;
+}
+
+.input-wrapper.checkbox-input-wrapper input[type=checkbox]:checked + label.mrm-privacy-policy-input-label .mailmint-checkbox::after {
+  opacity: 1;
+  visibility: visible;
+}
+

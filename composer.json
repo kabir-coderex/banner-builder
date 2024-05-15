@@ -1,0 +1,39 @@
+{
+    "name": "rextheme/plugin_name",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "RexTheme",
+            "email": "support@rextheme.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "roots/wordpress-core-installer": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "RexTheme\\GuttenbergBannerBuilder\\": "includes/"
+        }
+    },
+    "extra": {
+        "wordpress-install-dir": "wordpress"
+    },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^3.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "phpcompatibility/phpcompatibility-wp": "^2.1",
+        "wp-phpunit/wp-phpunit": "^6.3",
+        "yoast/phpunit-polyfills": "^2.0",
+        "phpunit/phpunit": "^9.6",
+        "roots/wordpress-full": "^6.3",
+        "roots/wordpress-core-installer": "^1.100"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}

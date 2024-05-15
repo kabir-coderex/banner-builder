@@ -1,0 +1,27 @@
+@import "~@wordpress/base-styles/colors";
+@import "~@wordpress/base-styles/variables";
+@import "~@wordpress/base-styles/mixins";
+@import "~@wordpress/base-styles/breakpoints";
+@import "~@wordpress/base-styles/animations";
+@import "~@wordpress/base-styles/z-index";
+
+// Internal
+@import "../pages/components/header/style.scss";
+@import "../pages/components/sidebar/style.scss";
+@import "../pages/components/block-editor/style.scss";
+@import "../pages/components/privacy-policy/style.scss";
+
+
+body,
+html {
+  background-color: #f0f0f1;
+}
+
+#wpcontent {
+  background-color: #f0f0f1;
+}
+
+li > ul,
+li > ol {
+  margin-left: auto;
+}
